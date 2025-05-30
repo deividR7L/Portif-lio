@@ -9,3 +9,16 @@ toggle.addEventListener('click', () => {
   icon.classList.toggle('bx-menu');
   icon.classList.toggle('bx-x');
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+  const botoesLeiaMais = document.querySelectorAll(".btn-leia-mais");
+
+  botoesLeiaMais.forEach((botao) => {
+    botao.addEventListener("click", () => {
+      const texto = botao.previousElementSibling;
+      texto.classList.toggle("expandido");
+
+      botao.textContent = texto.classList.contains("expandido") ? "Ler menos" : "Leia mais";
+    });
+  });
+});

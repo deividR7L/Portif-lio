@@ -461,3 +461,16 @@ footer {
     list-style: inside square;
     line-height: 1.8;
 }
+.texto-servico {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 4;
+  line-clamp: 4; /* <-- adiciona essa linha para compatibilidade */
+  transition: all 0.3s ease;
+}
+
+.texto-servico.expandido {
+  display: block; /* remove o clamp */
+}
