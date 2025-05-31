@@ -474,3 +474,13 @@ footer {
 .texto-servico.expandido {
   display: block; /* remove o clamp */
 }
+
+.texto-leia-mais {
+  max-height: 80px;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+.texto-leia-mais.expandido {
+  max-height: 1000px; /* ou "none" se preferir sem limite */
+}
