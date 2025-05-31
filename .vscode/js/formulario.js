@@ -4,11 +4,11 @@ form.addEventListener("submit", async function (e) {
   e.preventDefault();
 
   const formData = {
-    name: form[0].value,
-    email: form[1].value,
-    phone: form[2].value,
-    subject: form[3].value,
-    message: form[4].value
+    name: form.elements["name"].value,
+    email: form.elements["email"].value,
+    phone: form.elements["phone"].value,
+    subject: form.elements["subject"].value,
+    message: form.elements["message"].value
   };
 
   try {
