@@ -254,18 +254,24 @@
       Contate-
       <span> me! </span>
     </h2>
-    <form id="contact-form">
-      <div class="input-box">
-        <input type="text" name="name" placeholder="Nome Completo" required />
-        <input type="email" name="email" placeholder="E-mail" required />
-      </div>
-      <div class="input-box">
-        <input type="text" name="phone" placeholder="Número do Telefone" />
-        <input type="text" name="subject" placeholder="Assunto" />
-      </div>
-      <textarea name="message" rows="8" placeholder="Mensagem" required></textarea>
-      <button type="submit" class="bnt">Enviar a Mensagem</button>
-    </form>
+ <form action="https://formsubmit.co/davimelgasso7l@icloud.com" method="POST">
+  <!-- Proteções contra spam -->
+  <input type="hidden" name="_captcha" value="false">
+  <input type="hidden" name="_next" value="https://seusite.com/obrigado.html">
+
+  <div class="input-box">
+    <input type="text" name="nome" placeholder="Nome Completo" required />
+    <input type="email" name="email" placeholder="E-mail" required />
+  </div>
+  <div class="input-box">
+    <input type="tel" name="telefone" placeholder="Número do Telefone" />
+    <input type="text" name="assunto" placeholder="Assunto" />
+  </div>
+
+  <textarea name="mensagem" cols="30" rows="8" placeholder="Mensagem" required>
+  <textarea tyoe="hidden" name="_next" value="http://127.0.0.1:5500/.vscode/obrigado.html"></textarea>
+  <button type="submit" class="bnt">Enviar a Mensagem</button>
+</form>
   </section>
   <!-- /contato-->
   <!-- sobre-->
