@@ -1,6 +1,3 @@
-/* obrigado.css */
-
-/*google fontes -popins  */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 :root {
@@ -9,4 +6,34 @@
     --bg-cor-1: #1f242d;
     --bg-cor-2: #323946;
     --cor-00: #0000001a;
+}
+
+* {
+    text-decoration: none;
+    margin: 0%;
+    padding: 0%;
+    background-color: var(--bg-cor-1);
+    text-align: center;
+}
+
+h1,
+p {
+    color: var(--cor-texto);
+}
+
+section {
+    min-height: 100vh;
+    padding: 20rem 20rem 6rem;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.7rem 1.8rem;
+    background-color: var(--cor-menu);
+    border-radius: 2rem;
+    color: var(--bg-cor-2);
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+    transition: 0.3s ease;
+    margin-top: 1.2rem;
 }
