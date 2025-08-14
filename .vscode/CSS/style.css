@@ -10,9 +10,10 @@
 }
 
 
+/* =================== RESET =================== */
 * {
-    margin: 0%;
-    padding: 0%;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
     text-decoration: none;
     border: none;
@@ -20,6 +21,7 @@
     scroll-behavior: smooth;
 }
 
+/* =================== BASE =================== */
 html {
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
@@ -30,10 +32,11 @@ body {
     color: var(--cor-texto);
 }
 
+/* =================== HEADER =================== */
 header {
     position: fixed;
-    top: 0%;
-    left: 0%;
+    top: 0;
+    left: 0;
     width: 100%;
     padding: 1.1rem;
     background-color: var(--bg-cor-1);
@@ -54,7 +57,7 @@ header {
     font-size: 1.2rem;
     color: var(--cor-texto);
     padding: 0.5rem 1rem;
-    transition: 0, 4s;
+    transition: color 0.4s;
 }
 
 .nav a:hover {
@@ -125,10 +128,11 @@ span {
     text-align: justify;
 }
 
+/* Correções: font-size, box-shadow, comentários, responsividade, etc. */
 .servicos h2,
 .portifolio h2,
 .contato h2 {
-    font-size: 2.2;
+    font-size: 2.2rem;
     margin-bottom: 1rem;
     text-align: center;
 }
@@ -167,7 +171,7 @@ span {
 }
 
 .servicos-box h3 {
-    font-size: 1.8 rem;
+    font-size: 1.8rem;
 }
 
 .servicos-box p {
@@ -307,7 +311,7 @@ footer {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 1.2rem;
+    padding: 2rem;
     background-color: var(--bg-cor-1);
 }
 
@@ -333,8 +337,7 @@ footer {
 .social-media a:hover {
     background-color: var(--cor-menu);
     color: var(--bg-cor-2);
-    box-shadow: 0 0 0.3 var(--cor-menu);
-
+    box-shadow: 0 0 0.3rem var(--cor-menu);
 }
 
 .menu-toggle {
