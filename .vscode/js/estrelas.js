@@ -1,4 +1,4 @@
-// Estrelas cadentes e estrelas fixas realistas
+// Estrelas cadentes e estrelas fixas
 const canvas = document.getElementById('stars-bg');
 const ctx = canvas.getContext('2d');
 let w, h;
