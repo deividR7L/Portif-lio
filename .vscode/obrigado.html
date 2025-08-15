@@ -6,8 +6,21 @@
   <meta name="description" content="Página de agradecimento do portfólio de Deivid Rodrigues.">
   <title>Obrigado pelo contato</title>
   <link rel="stylesheet" href="CSS/obrigado.css">
+  <style>
+    body, html { height: 100%; margin: 0; padding: 0; }
+    #stars-bg {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100vw;
+      height: 100vh;
+      z-index: -1;
+      display: block;
+      background: transparent;
+    }
+  </style>
 </head>
 <body>
+  <canvas id="stars-bg"></canvas>
   <section class="menu-content">
     <h1>Obrigado pelo contato!</h1>
     <p>Recebi sua mensagem e em breve entrarei em contato com você.</p>
@@ -17,5 +30,6 @@
     <p>&copy; 2025 Deivid Rodrigues. Todos os direitos reservados.</p>
     <p>Contato: <a href="mailto:davimelgasso7l@icloud.com">davimelgasso7l@icloud.com</a></p>
   </footer>
+  <script src="js/estrelas.js"></script>
 </body>
 </html>
