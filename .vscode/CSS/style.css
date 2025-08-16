@@ -140,6 +140,21 @@ span {
 }
 
 /* Correções: font-size, box-shadow, comentários, responsividade, etc. */
+.texto-leia-mais {
+    max-height: 80px;
+    overflow: hidden;
+    transition: max-height 0.4s cubic-bezier(.5,.2,.2,1);
+    display: block;
+    position: relative;
+    text-overflow: ellipsis;
+    white-space: normal;
+    word-break: break-word;
+    cursor: pointer;
+}
+.texto-leia-mais.expandido {
+    max-height: 1000px;
+    display: block;
+}
 .servicos h2,
 .portifolio h2,
 .contato h2 {
@@ -149,17 +164,18 @@ span {
 }
 
 .servicos-container {
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 16px;
+    align-items: start;
 }
 
 .servicos-box {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    display: block;
     min-height: 25rem;
     margin-bottom: 1rem;
+    height: auto;
+    transition: height 0.4s cubic-bezier(.5,.2,.2,1);
 }
 
 .servicos-container .servicos-box {
