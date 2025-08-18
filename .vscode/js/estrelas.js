@@ -54,7 +54,7 @@ function randomMeteor() {
 let meteors = Array.from({length: 6}, randomMeteor);
 
 function drawMeteor(meteor) {
-  // Tail effect
+  // Tail efeito
   for (let i = 0; i < meteor.tail.length; i++) {
     const t = meteor.tail[i];
     ctx.save();
@@ -67,7 +67,7 @@ function drawMeteor(meteor) {
     ctx.stroke();
     ctx.restore();
   }
-  // Main meteor
+  // meteoro
   ctx.save();
   ctx.globalAlpha = meteor.alpha;
   ctx.strokeStyle = '#fff';

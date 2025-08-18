@@ -1,4 +1,4 @@
-// Expande/recolhe texto dos cards de serviços de forma profissional
+// Expande/recolhe texto dos cards de serviços
 document.addEventListener('DOMContentLoaded', function() {
   document.querySelectorAll('.btn-leia-mais').forEach(function(btn) {
     btn.addEventListener('click', function(e) {

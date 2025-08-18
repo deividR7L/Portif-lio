@@ -9,5 +9,3 @@ toggle.addEventListener('click', () => {
   icon.classList.toggle('bx-menu');
   icon.classList.toggle('bx-x');
 });
-
-// ...existing code...
