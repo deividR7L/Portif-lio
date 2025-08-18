@@ -8,7 +8,16 @@
     --bg-cor-2: #323946;
     --cor-00: #0000001a;
 }
-
+    body, html { height: 100%; margin: 0; padding: 0; }
+    #stars-bg {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100vw;
+      height: 100vh;
+      z-index: -1;
+      display: block;
+      background: transparent;
+    }
 * {
     margin: 0;
     padding: 0;
